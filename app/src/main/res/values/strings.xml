@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MaBanqueTest</string>
+    <string name="title_account">Mes Comptes</string>
+    <string name="title_simulation">Simulation</string>
+    <string name="title_uptoyou">à vous de jouer</string>
+    <string name="credit_agricole">Crédit Agricole</string>
+    <string name="autres_banques">Autres banques</string>
+</resources>

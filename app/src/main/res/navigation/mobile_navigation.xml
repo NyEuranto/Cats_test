@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_account">
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.cats.mabanquetest.ui.fragment.account.view.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_nav_account_to_nav_operation"
+            app:destination="@id/navigation_operation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_operation"
+        android:name="com.cats.mabanquetest.ui.fragment.account.view.OperationFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_operation" />
+
+    <fragment
+        android:id="@+id/navigation_simulation"
+        android:name="com.cats.mabanquetest.ui.fragment.simulation.view.SimulationFragment"
+        android:label="@string/title_simulation" />
+
+    <fragment
+        android:id="@+id/navigation_a_vous"
+        android:name="com.cats.mabanquetest.ui.fragment.uptoyou.view.AboutUsFragment"
+        android:label="@string/title_uptoyou" />
+</navigation>

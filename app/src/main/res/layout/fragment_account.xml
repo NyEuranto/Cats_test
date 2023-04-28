@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="40dp"
+            android:textSize="@dimen/title_header_size"
+            android:textStyle="bold"
+            android:text="@string/title_account" />
+
+
+        <TextView
+            android:id="@+id/ca_category"
+            android:layout_below="@id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:padding="@dimen/content_padding"
+            android:background="@color/grey"
+            android:text="@string/credit_agricole"
+            android:textColor="@color/black" />
+
+        <ExpandableListView
+            android:id="@+id/expandable_bank_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ca_category"
+            android:groupIndicator="@null"/>
+
+        <TextView
+            android:id="@+id/other_category"
+            android:layout_below="@id/expandable_bank_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/content_padding"
+            android:background="@color/grey"
+            android:text="@string/autres_banques"
+            android:textColor="@color/black" />
+
+        <ExpandableListView
+            android:id="@+id/expandable_other_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/other_category"
+            android:groupIndicator="@null" />
+
+    </RelativeLayout>
+</layout>
